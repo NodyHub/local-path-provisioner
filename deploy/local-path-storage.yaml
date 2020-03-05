@@ -59,9 +59,9 @@ spec:
       containers:
       - name: local-path-provisioner
         image: nodydocker/local-pv:v1.0
-        imagePullPolicy: IfNotPresent
+        imagePullPolicy: Always
         command:
-        - local-path-provisioner
+        - /local-path-provisioner
         - --debug
         - start
         - --config
